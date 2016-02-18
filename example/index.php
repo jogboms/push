@@ -8,8 +8,8 @@ $app = new Push\Application();
 // $app->uses(new \Push\Middlewares\Flash);
 // $app->uses(new \Push\Middlewares\Database);
 
-// Hello world from controller
-$app->router->get('/hello/:$input');
+// Hello world from Hello controller
+$app->router->get('/hello/:$input', 'Hello@index');
 
 // Hello world from Callback
 $app->router->get('/:$input', function($req, $res){
