@@ -5,4 +5,4 @@ namespace App\Model;
 /**
 * Index Model
 */
-class Index extends Push\Model {}
+class Index extends \Push\Model {}
