@@ -10,8 +10,6 @@ class Hello extends \Push\Controller
 	
 	function index($request, $response)
 	{
-		$index = $this->model('index');
-
 		$response->render('index');
 	}
 }
