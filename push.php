@@ -13,7 +13,7 @@
  * See PUSH.json for copyright notices and details.
  */
 
-define('REQUIRED_PHP_VERSION', '5.4.0');
+defined('REQUIRED_PHP_VERSION') or define('REQUIRED_PHP_VERSION', '5.4.0');
 
 // Debug Purposes
 function __($_ = []){echo '<pre>'; print_r($_); echo '</pre>';}

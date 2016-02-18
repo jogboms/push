@@ -51,6 +51,8 @@
 
 namespace Push;
 
+defined('REQUIRED_PHP_VERSION') or define('REQUIRED_PHP_VERSION', '5.5.0');
+
 if (version_compare(PHP_VERSION, REQUIRED_PHP_VERSION, '<')) 
 	die('PHP v'.REQUIRED_PHP_VERSION.'+ is required. You are currently running on v'.PHP_VERSION.'.');
 
