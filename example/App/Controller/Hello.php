@@ -5,7 +5,7 @@ namespace App\Controller;
 /**
 * Hello Controller
 */
-class Hello extends Push\Controller
+class Hello extends \Push\Controller
 {
 	
 	function index($request, $response)
