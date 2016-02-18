@@ -7,7 +7,7 @@ A Minimal PHP platform for rapid web application development.
 It's most recommended to utilize [Composer](https://getcomposer.org/) for installation.
 
 ```bash
-$ composer require push/push "^0.1"
+$ composer require push/push "@dev"
 ```
 
 This installs Push and it requires PHP 5.5.0 or newer.
