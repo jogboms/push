@@ -5,6 +5,6 @@
 	    }
 	},
 	"require": {
-        "push/push": "^1.0"
+        "push/push": "^0.1"
     }
 }
