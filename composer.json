@@ -1,9 +1,9 @@
 {
     "name": "push/push",
-    "description": "A PHP-driven platform for rapid web application develepment",
+    "description": "A Minimal PHP-driven platform for rapid web application develepment",
     "type": "library",
     "license": "MIT",
-    "keywords": ["framework", "light", "minimal", "application", "slim"],
+    "keywords": ["micro", "framework", "light", "minimal", "application", "slim"],
     "homepage": "http://github.com/Jogboms/push",
     "authors": [
         {
