@@ -1,0 +1,23 @@
+{
+    "name": "push/push",
+    "description": "A PHP-driven platform for rapid web application develepment",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["framework", "light", "minimal", "application", "slim"],
+    "homepage": "http://github.com/Jogboms/push",
+    "authors": [
+        {
+            "name": "Jeremiah Ogbomo",
+            "email": "jaybladez09@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Push\\": "Push"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0"
+    }
+}
