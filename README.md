@@ -23,8 +23,8 @@ include_once __DIR__.'/vendor/autoload.php';
 
 $app = new Push\Application();
 
-// Hello world from controller
-$app->router->get('/hello/:$input');
+// Hello world from Hello controller
+$app->router->get('/hello/:$input', 'Hello@index');
 
 // Hello world from Callback
 $app->router->get('/:$input', function($req, $res){
