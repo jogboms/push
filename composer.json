@@ -1,6 +1,6 @@
 {
     "name": "push/push",
-    "description": "A Minimal PHP-driven platform for rapid web application develepment",
+    "description": "A Minimal PHP platform for rapid web application development",
     "type": "library",
     "license": "MIT",
     "keywords": ["micro", "framework", "light", "minimal", "application", "slim"],
@@ -8,7 +8,8 @@
     "authors": [
         {
             "name": "Jeremiah Ogbomo",
-            "email": "jaybladez09@gmail.com"
+            "email": "jaybladez09@gmail.com",
+            "homepage": "http://twitter.com/jogboms"
         }
     ],
     "minimum-stability": "stable",
