@@ -30,7 +30,7 @@ return [
 		'use_debugger' => true,
 		
 		'app_dir' => '/App',
-		'templates_dir' => '/App/View',
+		'templates_dir' => '/App/Views',
 		'storage_dir' => '/storage',
 		'library_dir' => '/library',
 		'assets_dir' => '/www/assets',
