@@ -24,17 +24,19 @@ include_once __DIR__.'/vendor/autoload.php';
 $app = new Push\Application();
 
 // Hello world from Hello controller
-$app->router->get('/hello/:$input', 'Hello@index');
+$app->router->any('/hello/:$input', 'Hello@index');
 
 // Hello world from Callback
 $app->router->get('/:$input', function($req, $res){
-	$content = '<h1>Hello, '.$req['input'].'</h1>';
-	$content .= '<h2>From a callback..<a href="hello/world"></a></h2>';
+	$content = '<h1>Hello, '.$req['input'].'!</h1>';
+	$content .= '<h2>from Route callback..</h2>';
+	$content .= '<a href="hello/world">Goto Hello Controller</a>';
 
 	$res->write($content);
 });
 
 $app->run();
+
 ```
 
 The rest of the Application's configurations and structure is described in th example's directory.

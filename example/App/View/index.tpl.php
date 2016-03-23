@@ -1,4 +1,6 @@
 
-<h1>Hello <?php echo $request['input'] ?></h1>
+<h1>Hello, <?php echo $request['input'] ?>!</h1>
 
-<h2>From a controller...</h2>
+<h2>from Hello controller..</h2>
+
+<a href="../world">Goto Route Callback</a>

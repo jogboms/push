@@ -1,18 +1,21 @@
 {
     "name": "push/push",
-    "description": "A Minimal PHP platform for rapid web application development",
+    "fullname" : "PUSH PHP FRAMEWORK",
+    "description": "A PHP-driven platform for rapid web application develepment",
     "type": "library",
     "license": "MIT",
-    "keywords": ["micro", "framework", "light", "minimal", "application", "slim"],
+    "keywords": ["framework", "light", "minimal", "application", "slim"],
     "homepage": "http://github.com/Jogboms/push",
+    "version" : "0.0.1 alpha",
+    "created" : 2014,
     "authors": [
         {
             "name": "Jeremiah Ogbomo",
             "email": "jaybladez09@gmail.com",
-            "homepage": "http://twitter.com/jogboms"
+            "link" : "http://www.github.com/jogboms"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Push\\": "Push"

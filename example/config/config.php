@@ -1,7 +1,7 @@
 <?php
 /**
  * New Application-specific configuration parameters could be added here
- * e.g 
+ * e.g
  * ```
  * 'New_Param_Name' => 'My new config parameter value',
  * ```
@@ -15,9 +15,9 @@ return [
 		'fullname' => 'Push PHP',
 		'description' => 'A Minimal PHP-driven platform for rapid web application development',
 		'author' => 'Jogboms',
-		'version' => '0.0.1 beta',
+		'version' => '0.0.1',
 		'created' => 2015,
-	   
+
 		'online' => true,
 		// 'debug' => false,
 		'debug' => true,
@@ -28,9 +28,13 @@ return [
 		'use_mvc_routes' => true,
 		// 'use_debugger' => false,
 		'use_debugger' => true,
-		
-		'app_dir' => '/App',
-		'templates_dir' => '/App/View',
+
+    'app_dir' => '/App',
+    'app_model_dir' => '/App/Model',
+		'app_controller_dir' => '/App/Controller',
+    'app_view_dir' => '/App/View',
+		'app_includes_dir' => '/App/includes',
+    'app_public_dir' => '/www',
 		'storage_dir' => '/storage',
 		'library_dir' => '/library',
 		'assets_dir' => '/www/assets',

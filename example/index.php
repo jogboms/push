@@ -9,14 +9,15 @@ $app = new Push\Application();
 // $app->uses(new \Push\Middlewares\Database);
 
 // Hello world from Hello controller
-$app->router->get('/hello/:$input', 'Hello@index');
+$app->router->any('/hello/:$input', 'Hello@index');
 
 // Hello world from Callback
 $app->router->get('/:$input', function($req, $res){
-	$content = '<h1>Hello, '.$req['input'].'</h1>';
-	$content .= '<h2>From a callback..<a href="hello/world">Hello World</a></h2>';
+  $content = '<h1>Hello, '.$req['input'].'!</h1>';
+  $content .= '<h2>from Route callback..</h2>';
+  $content .= '<a href="hello/world">Goto Hello Controller</a>';
 
-	$res->write($content);
+  $res->write($content);
 });
 
 $app->run();

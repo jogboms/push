@@ -1,16 +1,11 @@
 <?php
 /**
  * PUSH MVC Framework.
- * @package PUSH MVC Framework
- * @version See PUSH.json
- * @author See PUSH.json
- * @copyright See PUSH.json
- * @license See PUSH.json
- * PUSH MVC Framework is free software. This version may have been modified pursuant
- * to the GNU General Public License, and as distributed it includes or
- * is derivative of works licensed under the GNU General Public License or
- * other free or open source software licenses.
- * See PUSH.json for copyright notices and details.
+ * @package See composer.json
+ * @version See composer.json
+ * @author See composer.json
+ * @copyright See composer.json
+ * @license See composer.json
  */
 
 namespace Push\Core;
@@ -18,17 +13,18 @@ namespace Push\Core;
 use Push\Utils\Collection;
 
 Class Config extends Collection {
-	private function __clone(){}
-	
-	function __construct($config){
-		$config['PUSH'] = new Collection(json_decode(file_get_contents(dirname(PUSH).DS.'PUSH.json')), true);
-		$config['mail'] = new Collection($config['mail'], true);
-		$config['APP'] = new Collection($config['APP'], true);
-		$config['db'] = new Collection($config['database'][$config['APP']['mode']], true);
+    private function __clone(){}
 
-		unset($config['database']);
+    public function __construct($config){
+    $push = json_decode(file_get_contents(dirname(PUSH).DS.'composer.json'));
+        $push->name = ucfirst(explode('/', $push->name)[1]);
+    $config['PUSH'] = new Collection($push, true);
+        $config['mail'] = new Collection($config['mail'], true);
+        $config['APP'] = new Collection($config['APP'], true);
+        $config['db'] = new Collection($config['database'][$config['APP']['mode']], true);
 
-		parent::__construct($config);
-	}
+        unset($config['database']);
 
+        parent::__construct($config);
+    }
 }
